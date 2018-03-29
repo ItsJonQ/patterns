@@ -54,3 +54,41 @@ if (
   return youveGotAFriendInMe()
 }
 ```
+
+
+---
+
+
+## Import
+
+### Custom name
+
+When doing an `import`, you can assign the `default` `export` of a file to whatever variable you'd like.
+
+```js
+import toy from '../andy/toyChest'
+```
+
+If you need to import the `default` with other things from a single file, you can assign a custom name using `as`:
+
+```js
+import {
+  default as toy
+  woody,
+  buzz,
+  jessie,
+  bullseye
+} from '../andy/toyChest'
+```
+
+You can, of course, customize the non-default things as well:
+
+```js
+import {
+  default as toy
+  woody,
+  buzz as spaceRanger,
+  jessie,
+  bullseye
+} from '../andy/toyChest'
+```
