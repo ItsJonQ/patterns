@@ -1,5 +1,19 @@
 # Javascript
 
+## Arrays
+
+### Mutation-free modification
+
+If mutation is a concern, before doing something, anything, to an array, clone it by using `...spread`:
+
+```js
+const newToys = [...oldToys].filter(toy => toy.name !== 'lotsOHugginBear')
+```
+
+
+---
+
+
 ## Boolean
 
 ### Double Bang
